@@ -17,6 +17,6 @@ WORKDIR /root
 #add script to run with entrypoint into the working directory
 ADD halo.sh /root/halo.sh
 #create entrypoint which should run every time this image is used
-#ENTRYPOINT ["./halo.sh"]
+ENTRYPOINT ["./halo.sh"]
 #command to run main application that will hopefully be tracked as main PID
 CMD /bin/bash
